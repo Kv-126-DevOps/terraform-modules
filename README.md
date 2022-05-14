@@ -1,2 +1,3 @@
-# terraform-modules
-terraform modules
+# Terraform Modules
+
+This repository contains the modules used to configure the infrastructure
