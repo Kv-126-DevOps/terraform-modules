@@ -2,9 +2,9 @@
 
 ```hcl
 module "ec2_instance" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
+  source  = "../../source"
   version = "~> 3.0"
-  name = "single-instance"
+  name = "ec2instance"
   ami                    = "ami-ebd02392"
   instance_type          = "t2.micro"
   key_name               = "user1"
