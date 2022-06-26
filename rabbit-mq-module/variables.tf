@@ -40,15 +40,9 @@ variable "subnet_ids" {
   default     = null
 }
 
-variable "vpc_id" {
-  description = "ID of the VPC where to create broker"
-  type        = string
-  default     = "vpc-0d14e4956bccdc439"
-}
-
 variable "user" {
   description = "Configuration block for broker users"
-  type        = map(string)
+  type        = map(any)
   default     = {}
 }
 
