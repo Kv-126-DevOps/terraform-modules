@@ -1,9 +1,3 @@
-variable "create" {
-  description = "Whether to create an broker"
-  type        = bool
-  default     = true
-}
-
 variable "broker_name" {
   description = "Name to be used on broker created"
   type        = string
