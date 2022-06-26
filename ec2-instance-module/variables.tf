@@ -70,12 +70,6 @@ variable "tags" {
   default     = {}
 }
 
-variable "vpc_id" {
-  description = "ID of the VPC where to create instance"
-  type        = string
-  default     = "vpc-0d14e4956bccdc439"
-}
-
 variable "vpc_security_group_ids" {
   description = "List of security group IDs to associate"
   type        = list(string)
