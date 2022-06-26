@@ -18,14 +18,14 @@ output "public_dns" {
   value       = aws_instance.example.public_dns
 }
 
-output "public_ip" {
-  description = "Public IP address assigned to instance"
-  value       = aws_instance.example.public_ip
-}
-
 output "private_ip" {
   description = "Private IP address assigned to instance"
   value       = aws_instance.example.private_ip
+}
+
+output "public_ip" {
+  description = "Public IP address assigned to instance"
+  value       = aws_instance.example.public_ip
 }
 
 output "tags_all" {

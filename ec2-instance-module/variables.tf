@@ -70,14 +70,14 @@ variable "tags" {
   default     = {}
 }
 
-variable "vpc_security_group_ids" {
-  description = "List of security group IDs to associate"
-  type        = list(string)
-  default     = null
-}
-
 variable "timeouts" {
   description = "Define maximum timeout for creating, updating, and deleting EC2 instance resources"
   type        = map(string)
   default     = {}
+}
+
+variable "vpc_security_group_ids" {
+  description = "List of security group IDs to associate"
+  type        = list(string)
+  default     = null
 }
