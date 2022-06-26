@@ -1,5 +1,6 @@
 ########### Resourse Example ###############
 resource "aws_instance" "example" {
+  count                       = var.create ? 1 : 0
   ami                         = var.ami
   instance_type               = var.instance_type
   availability_zone           = var.availability_zone
