@@ -2,14 +2,15 @@
 
 ```hcl
 module "ec2_instance" {
-  source  = "../../source"
-  name = "ec2instance"
+  source                 = "../../source"
+  create                 = true
+  name                   = "ec2instance"
   ami                    = "ami-ebd02392"
   instance_type          = "t2.micro"
   key_name               = "deploy"
   monitoring             = true
   vpc_security_group_ids = ["sg-12345678"]
-  subnet_id              = "subnet-eddcdzz4"
+  subnet_id              = "subnet-122345"
   tags = {
     Terraform   = "true"
     Environment = "dev"
