@@ -40,23 +40,23 @@ variable "subnet_ids" {
   default     = null
 }
 
-variable "user" {
-  description = "Configuration block for broker users"
-  type        = map(any)
-  default     = {}
-}
+# variable "user" {
+#   description = "Configuration block for broker users"
+#   type        = map(any)
+#   default     = {}
+# }
 
-variable "username" {
-  description = "Username of the user"
-  type        = string
-  default     = "mquser"
-}
+# variable "username" {
+#   description = "Username of the user"
+#   type        = string
+#   default     = "mquser"
+# }
 
-variable "password" {
-  description = "Password of the user. It must be 12 to 250 characters long, at least 4 unique characters, and must not contain commas"
-  type        = string
-  default     = null
-}
+# variable "password" {
+#   description = "Password of the user. It must be 12 to 250 characters long, at least 4 unique characters, and must not contain commas"
+#   type        = string
+#   default     = null
+# }
 
 variable "tags" {
   description = "Mapping of tags to assign to the resource"
