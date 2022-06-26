@@ -42,3 +42,8 @@ output "subnet_ids" {
   description = "List of subnet IDs in which to launch the broker"
   value       = aws_mq_broker.rabbit.subnet_ids
 }
+
+output "endpoint" {
+  description = "Broker's wire-level protocol endpoint"
+  value       = aws_mq_broker.rabbit.instances.0.endpoints
+}
