@@ -1,5 +1,5 @@
 resource "aws_mq_broker" "rabbit" {
-  //count              = var.create ? 1 : 0
+  count              = var.create ? 1 : 0
   broker_name        = var.broker_name
   engine_type        = var.engine_type
   engine_version     = var.engine_version
